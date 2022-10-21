@@ -1,0 +1,558 @@
+{
+	"info": {
+		"_postman_id": "d726fe69-4279-436f-ae9f-7e35e1d6021a",
+		"name": "Official Store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22303050"
+	},
+	"item": [
+		{
+			"name": "Set Brand",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1323/set/brand/contract/0x44F1261B7E7C9739fb7E595039a551DB34330732/BRODO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"set",
+						"brand",
+						"contract",
+						"0x44F1261B7E7C9739fb7E595039a551DB34330732",
+						"BRODO"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get balance report",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1323/balance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1323",
+							"path": [
+								"balance"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 01:14:28 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4"
+						}
+					],
+					"cookie": [],
+					"body": "110"
+				}
+			]
+		},
+		{
+			"name": "Get Brand",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1323/get/brand/0x44F1261B7E7C9739fb7E595039a551DB34330732",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"get",
+						"brand",
+						"0x44F1261B7E7C9739fb7E595039a551DB34330732"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get balance report",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1323/balance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1323",
+							"path": [
+								"balance"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 01:14:28 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4"
+						}
+					],
+					"cookie": [],
+					"body": "110"
+				}
+			]
+		},
+		{
+			"name": "Set Official Store",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"BRODO BANJARMASIN\",\n    \"mainBrandAddress\": \"0x44F1261B7E7C9739fb7E595039a551DB34330732\",\n    \"district\": \"BANJARMASIN\",\n    \"expiredDate\": 1691996101,\n    \"active\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1323/set/contract/os/0x7c5C3a0F1669d77E73BfE59AbF186C2F745557A8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"set",
+						"contract",
+						"os",
+						"0x7c5C3a0F1669d77E73BfE59AbF186C2F745557A8"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get balance report",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1323/balance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1323",
+							"path": [
+								"balance"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 01:14:28 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4"
+						}
+					],
+					"cookie": [],
+					"body": "110"
+				}
+			]
+		},
+		{
+			"name": "Get Official Store",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"BRODO BANJARMASIN\",\n    \"mainBrandAddress\": \"0x44F1261B7E7C9739fb7E595039a551DB34330732\",\n    \"district\": \"BANJARMASIN\",\n    \"expiredDate\": 1691996101,\n    \"active\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1323/get/contract/os/0x7c5C3a0F1669d77E73BfE59AbF186C2F745557A8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"get",
+						"contract",
+						"os",
+						"0x7c5C3a0F1669d77E73BfE59AbF186C2F745557A8"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get balance report",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1323/balance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1323",
+							"path": [
+								"balance"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 01:14:28 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4"
+						}
+					],
+					"cookie": [],
+					"body": "110"
+				}
+			]
+		},
+		{
+			"name": "Enable OS (buggy)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"BRODO BANJARMASIN\",\n    \"mainBrandAddress\": \"0x44F1261B7E7C9739fb7E595039a551DB34330732\",\n    \"district\": \"BANJARMASIN\",\n    \"expiredDate\": 1691996101,\n    \"active\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1323/enable/os/0x7c5C3a0F1669d77E73BfE59AbF186C2F745557A8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"enable",
+						"os",
+						"0x7c5C3a0F1669d77E73BfE59AbF186C2F745557A8"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get balance report",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1323/balance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1323",
+							"path": [
+								"balance"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 01:14:28 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4"
+						}
+					],
+					"cookie": [],
+					"body": "110"
+				}
+			]
+		},
+		{
+			"name": "Disable OS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"BRODO BANJARMASIN\",\n    \"mainBrandAddress\": \"0x44F1261B7E7C9739fb7E595039a551DB34330732\",\n    \"district\": \"BANJARMASIN\",\n    \"expiredDate\": 1691996101,\n    \"active\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1323/disable/os/0x7c5C3a0F1669d77E73BfE59AbF186C2F745557A8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"disable",
+						"os",
+						"0x7c5C3a0F1669d77E73BfE59AbF186C2F745557A8"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get balance report",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1323/balance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1323",
+							"path": [
+								"balance"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 01:14:28 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4"
+						}
+					],
+					"cookie": [],
+					"body": "110"
+				}
+			]
+		},
+		{
+			"name": "Is Active",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"BRODO BANJARMASIN\",\n    \"mainBrandAddress\": \"0x44F1261B7E7C9739fb7E595039a551DB34330732\",\n    \"district\": \"BANJARMASIN\",\n    \"expiredDate\": 1691996101,\n    \"active\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1323/is/active/0x7c5C3a0F1669d77E73BfE59AbF186C2F745557A8/BRODO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"is",
+						"active",
+						"0x7c5C3a0F1669d77E73BfE59AbF186C2F745557A8",
+						"BRODO"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get balance report",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1323/balance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1323",
+							"path": [
+								"balance"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 01:14:28 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4"
+						}
+					],
+					"cookie": [],
+					"body": "110"
+				}
+			]
+		},
+		{
+			"name": "Extend Contract",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"address\": \"0x7c5C3a0F1669d77E73BfE59AbF186C2F745557A8\",\n    \"expiredDate\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1323/extend/contract",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"extend",
+						"contract"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get balance report",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1323/balance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1323",
+							"path": [
+								"balance"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Aug 2022 01:14:28 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4"
+						}
+					],
+					"cookie": [],
+					"body": "110"
+				}
+			]
+		}
+	]
+}
